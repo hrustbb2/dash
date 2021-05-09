@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+    dash:
+        build:
+            context: ../dockerfiles/dash
+            dockerfile: Dockerfile_aarch64
+        command: sh /home/scripts/start.sh
+        volumes:
+            - ../data/blocks:/home/blocks
+            - ../scripts/dash:/home/scripts

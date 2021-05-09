@@ -1,0 +1,22 @@
+items:
+    1:
+        title: '1. Build x86_64'
+        env: 'dev'
+        commands:
+            - 'docker-compose --project-name %(appName)s --file conf/docker-compose-x86_64.yml build --no-cache'
+        vars:
+            - appName
+    2:
+        title: '2. Up'
+        env: 'dev'
+        commands:
+            - 'docker-compose --project-name %(appName)s --file conf/docker-compose-x86_64.yml up --force-recreate -d'
+        vars:
+            - appName
+    3:
+        title: '3. Stop'
+        env: 'dev'
+        commands: 
+            - 'docker-compose --project-name %(appName)s --file conf/docker-compose-x86_64.yml stop'
+        vars:
+            - appName

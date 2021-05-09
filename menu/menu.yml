@@ -1,0 +1,7 @@
+items:
+    1:
+      title: '1. Linux ARM 64 bit'
+      file: '/aarch64.yml'
+    2:
+      title: '2. Linux x86 64'
+      file: '/x86_64.yml'
